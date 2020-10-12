@@ -1,6 +1,9 @@
 package CONTROL;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
 
 public class Login extends JFrame {
     private JPanel panelLogin;
@@ -14,11 +17,15 @@ public class Login extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
         this.setResizable(false);
-    }
+        this.setVisible(true);
+        buttonLogin.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelLogin.setVisible(false);
+                MenuAdmin menuAdmin = new MenuAdmin();
 
-    public static void main(String[] args) {
-        Login login = new Login();
-        login.setVisible(true);
+            }
+        });
     }
 
 }
