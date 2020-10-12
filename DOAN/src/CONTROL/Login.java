@@ -14,7 +14,7 @@ public class Login extends JFrame {
     public Login(){
         super("Đăng Nhập");
         this.setContentPane(this.panelLogin);
-        this.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
         this.setResizable(false);
         this.setVisible(true);
