@@ -14,16 +14,15 @@ public class Login extends JFrame {
     public Login(){
         super("Đăng Nhập");
         this.setContentPane(this.panelLogin);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         this.pack();
         this.setResizable(false);
         this.setVisible(true);
         buttonLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                panelLogin.setVisible(false);
                 MenuAdmin menuAdmin = new MenuAdmin();
-
+                setVisible(false);
             }
         });
     }

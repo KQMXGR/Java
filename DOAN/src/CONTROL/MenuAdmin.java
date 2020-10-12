@@ -25,9 +25,8 @@ public class MenuAdmin extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 Login login = new Login();
-                panelAdmin.setVisible(false);
+                setVisible(false);
             }
         });
     }
-
 }
