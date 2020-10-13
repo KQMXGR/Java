@@ -19,6 +19,7 @@ public class MenuAdmin extends JFrame{
         this.setContentPane(this.panelAdmin);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
+        setLocationRelativeTo(null);
         this.setResizable(false);
         this.setVisible(true);
         buttonLogout.addActionListener(new ActionListener() {

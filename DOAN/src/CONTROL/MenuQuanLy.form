@@ -1,13 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="CONTROL.MenuQuanLy">
-  <grid id="27dc6" row-count="1" column-count="1" layout-manager="GridLayoutManager">
+  <grid id="27dc6" binding="panelThuThu" layout-manager="GridLayoutManager" row-count="11" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
-      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+      <xy x="20" y="20" width="800" height="600"/>
     </constraints>
-    <properties/>
+    <properties>
+      <maximumSize width="800" height="600"/>
+      <minimumSize width="800" height="600"/>
+      <preferredSize width="800" height="600"/>
+    </properties>
     <border type="none"/>
-    <children/>
+    <children>
+      <component id="6214e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14" style="1"/>
+          <text value="HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG CƠ SỞ THÀNH PHỐ HỒ CHÍ MINH"/>
+        </properties>
+      </component>
+      <component id="7467e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="100"/>
+            <preferred-size width="-1" height="100"/>
+            <maximum-size width="-1" height="100"/>
+          </grid>
+        </constraints>
+        <properties>
+          <focusable value="false"/>
+          <font size="26" style="3"/>
+          <text value="QUẢN LÝ THƯ VIỆN"/>
+        </properties>
+      </component>
+      <component id="70efc" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="20" style="3"/>
+          <text value="THỦ THƯ"/>
+        </properties>
+      </component>
+      <component id="dd1f6" class="javax.swing.JButton" binding="buttonEditThuThu">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false">
+            <minimum-size width="300" height="-1"/>
+            <preferred-size width="300" height="-1"/>
+            <maximum-size width="300" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Sửa thông tin thủ thư"/>
+        </properties>
+      </component>
+      <component id="f1b07" class="javax.swing.JButton" binding="buttonFindSach">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false">
+            <minimum-size width="300" height="-1"/>
+            <preferred-size width="300" height="-1"/>
+            <maximum-size width="300" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Tìm kiếm sách"/>
+        </properties>
+      </component>
+      <component id="99581" class="javax.swing.JButton" binding="buttonAddNguoiDoc">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false">
+            <minimum-size width="300" height="-1"/>
+            <preferred-size width="300" height="-1"/>
+            <maximum-size width="300" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Thêm người đọc"/>
+        </properties>
+      </component>
+      <component id="1cb6a" class="javax.swing.JButton" binding="buttonDeleteNguoiDoc">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false">
+            <minimum-size width="300" height="-1"/>
+            <preferred-size width="300" height="-1"/>
+            <maximum-size width="300" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Xóa người đọc"/>
+        </properties>
+      </component>
+      <component id="964ae" class="javax.swing.JButton" binding="buttonEditNguoiDoc">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false">
+            <minimum-size width="300" height="-1"/>
+            <preferred-size width="300" height="-1"/>
+            <maximum-size width="300" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Sửa thông tin người đọc"/>
+        </properties>
+      </component>
+      <component id="e9e9c" class="javax.swing.JButton" binding="buttonAddSach">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false">
+            <minimum-size width="300" height="-1"/>
+            <preferred-size width="300" height="-1"/>
+            <maximum-size width="300" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Thêm sách"/>
+        </properties>
+      </component>
+      <component id="35480" class="javax.swing.JButton" binding="buttonEditSach">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false">
+            <minimum-size width="300" height="-1"/>
+            <preferred-size width="300" height="-1"/>
+            <maximum-size width="300" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Sửa thông tin sách"/>
+        </properties>
+      </component>
+      <component id="da88" class="javax.swing.JButton" binding="buttonFindNguoiDoc">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false">
+            <minimum-size width="300" height="-1"/>
+            <preferred-size width="300" height="-1"/>
+            <maximum-size width="300" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Tìm kiếm thông tin người đọc"/>
+        </properties>
+      </component>
+      <component id="fcf61" class="javax.swing.JButton" binding="buttonLocSach">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false">
+            <minimum-size width="300" height="-1"/>
+            <preferred-size width="300" height="-1"/>
+            <maximum-size width="300" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Lọc sách"/>
+        </properties>
+      </component>
+      <component id="6f94e" class="javax.swing.JButton" binding="buttonCheckTDG">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false">
+            <minimum-size width="300" height="-1"/>
+            <preferred-size width="300" height="-1"/>
+            <maximum-size width="300" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Kiểm tra thẻ đọc giả"/>
+        </properties>
+      </component>
+      <component id="4eb17" class="javax.swing.JButton" binding="buttonGiaHanTDG">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false">
+            <minimum-size width="300" height="-1"/>
+            <preferred-size width="300" height="-1"/>
+            <maximum-size width="300" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Gia hạn thẻ đọc giả"/>
+        </properties>
+      </component>
+      <component id="5b676" class="javax.swing.JButton" binding="buttonLogout">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="400" height="-1"/>
+            <preferred-size width="400" height="-1"/>
+            <maximum-size width="400" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Đăng Xuất"/>
+        </properties>
+      </component>
+      <component id="2c841" class="javax.swing.JButton" binding="buttonEditTrangThaiSach">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false">
+            <minimum-size width="300" height="-1"/>
+            <preferred-size width="300" height="-1"/>
+            <maximum-size width="300" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Cho mượn sách"/>
+        </properties>
+      </component>
+      <component id="e76c3" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="30"/>
+            <preferred-size width="-1" height="30"/>
+            <maximum-size width="-1" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Create By Group 22   "/>
+          <verticalAlignment value="3"/>
+          <verticalTextPosition value="3"/>
+        </properties>
+      </component>
+    </children>
   </grid>
 </form>
