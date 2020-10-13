@@ -23,8 +23,19 @@ public class Login extends JFrame {
         buttonLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                MenuQuanLy menuQuanLy = new MenuQuanLy();
-                setVisible(false);
+                String user = textFieldUsername.getText();
+                String pass = passwordFieldPassword.getText();
+                if(user.equals("admin")&&pass.equals("admin")){
+                    JOptionPane.showMessageDialog(null,"Đăng Nhập Thành Công");
+                    MenuAdmin menuAdmin = new MenuAdmin();
+                    setVisible(false);
+                }else if(user.equals("thuthu")&&pass.equals("thuthu")){
+                    JOptionPane.showMessageDialog(null,"Đăng Nhập Thành Công");
+                    MenuQuanLy menuQuanLy = new MenuQuanLy();
+                    setVisible(false);
+                }else{
+                    JOptionPane.showMessageDialog(null,"Đăng Nhập Thất Bại");
+                }
             }
         });
     }

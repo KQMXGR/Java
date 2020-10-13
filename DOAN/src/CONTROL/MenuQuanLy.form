@@ -197,7 +197,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="Cho mượn sách"/>
+          <text value="Cập nhật trạng thái sách"/>
         </properties>
       </component>
       <component id="e76c3" class="javax.swing.JLabel">
